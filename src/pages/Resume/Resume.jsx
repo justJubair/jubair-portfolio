@@ -4,6 +4,7 @@ import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { MdOutlineFileDownload } from "react-icons/md";
 import resume from "../../assets/JubairAhmedResume.pdf";
+import AltNavbar from "../../components/Navbar/AltNavbar";
 
 const Resume = () => {
   const pdfUrlViewer = resume;
@@ -34,15 +35,11 @@ const Resume = () => {
 
   return (
     <div className="bg-[#1a1a1a] pb-10">
-      <Link
-        to="/"
-        className="absolute top-4 left-4 lg:left-14 bg-gradient-to-l from-[#203371] to-[#006e7b] px-4 p-2 rounded-lg shadow-xl text-white"
-      >
-        <FaLaptopCode size={25} />
-      </Link>
+      {/* navbar */}
+      <AltNavbar/>
       {/* Resume download button */}
       <div className="flex justify-center text-white">
-      <button onClick={handleDownloadResume} className="btn duration-300 mt-24 md:mt-16 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white font-bold hover:scale-105"> 
+      <button onClick={handleDownloadResume} className="btn duration-300 mt-16 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white font-bold hover:scale-105"> 
       <MdOutlineFileDownload size={25}/>DOWNLOAD RESUME</button>
       </div>
       {/* pdf viewer */}
