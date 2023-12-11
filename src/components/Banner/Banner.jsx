@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import Container from "../Shared/Container";
 import TypingAnimation from "./TypingAnimation";
 import bannerAnime2 from "../../assets/animations/bannerAnime2.json";
+import { MdOutlineFileDownload } from "react-icons/md";
 import resume from "../../assets/JubairAhmedResume.pdf";
 
 const Banner = () => {
@@ -53,8 +54,9 @@ const Banner = () => {
             <TypingAnimation />
             <button
               onClick={handleDownloadResume}
-              className=" btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-black font-bold hover:scale-105"
+              className=" btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white font-bold hover:scale-105"
             >
+              <MdOutlineFileDownload size={25}/>
               DOWNLOAD RESUME
             </button>
           </div>
