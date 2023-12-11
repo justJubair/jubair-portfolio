@@ -4,7 +4,9 @@ import Container from "../Shared/Container";
 import TypingAnimation from "./TypingAnimation";
 import bannerAnime2 from "../../assets/bannerAnime2.json";
 import resume from "../../assets/JubairAhmedResume.pdf";
+
 const Banner = () => {
+
   const handleDownloadResume = () => {
     // Specify the URL of the PDF file you want to download
     const pdfUrl = resume;
@@ -34,8 +36,8 @@ const Banner = () => {
         {/* main container */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
           {/* text content */}
-          <div className="space-y-4 w-80 md:w-[450px]">
-            <h2 className="text-2xl md:text-3xl font-semibold text-white">
+          <div  className="space-y-4 w-80 md:w-[450px]">
+            <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
               Hi there!
             </h2>
             <h1 className="text-4xl md:text-5xl font-bold text-white">
