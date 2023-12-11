@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
+import { Link } from 'react-scroll';
 const Navbar = () => {
   const navLinks = (
     <>
@@ -27,10 +28,18 @@ const Navbar = () => {
           Resume
         </NavLink>
       </li>
-      <li className="hover:text-[#4ecbd9]">
-        <a className="px-4 py-2" href="#projects">
-          Projects
-        </a>
+      <li className="hover:text-[#4ecbd9] hover:cursor-pointer">
+         <Link 
+      activeClass="active" 
+      to="projects" 
+      spy={true} 
+      smooth={true} 
+      offset={20} 
+      duration={500} 
+      
+    >
+      Projects
+    </Link>
       </li>
 
       <li className="hover:text-[#4ecbd9]">
