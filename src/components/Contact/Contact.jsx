@@ -2,8 +2,31 @@ import Container from "../Shared/Container";
 import contactAnime from "../../assets/animations/contactAnime.json";
 import { BsSend } from "react-icons/bs";
 import Lottie from "lottie-react";
+import axios from "axios";
+import toast from "react-hot-toast";
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
+  const handleContact = async(e)=>{
+    e.preventDefault()
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const messageText = form.message.value;
+    const message = {messageText, subject}
+    try{
+      const res = await axios.post(`https://formspree.io/${import.meta.env.VITE_FORM_ENDPOINT}`, {
+        name, email, subject, message
+      })
+      if(res?.data?.ok){
+        toast.success("Message sent successfully")
+        form.reset()
+      }
+    }
+    catch(err){
+      console.log("Error submitting form", err)
+    }
+  }
   return (
     <Container>
       <div id="contact" className="py-20 text-white">
@@ -27,31 +50,35 @@ const Contact = () => {
             <Lottie className="w-96" animationData={contactAnime} />
           </div>
           {/* form */}
-          <form className=" p-8 glass rounded-md space-y-6">
+          <form onSubmit={handleContact} className=" p-8 glass rounded-md space-y-6">
             <div className="flex gap-4">
               <input
                 type="text"
                 placeholder="Your Name"
+                name="name"
                 className="input text-black input-bordered input-info w-full "
               />
               <input
                 type="text"
                 placeholder="Your Email"
+                name="email"
                 className="input text-black input-bordered input-info w-full "
               />
             </div>
             <input
               type="text"
               placeholder="Your Subject"
+              name="subject"
               className="input text-black input-bordered input-info w-full "
             />
             <textarea
-              className="textarea textarea-info w-full"
+              className="textarea textarea-info w-full text-black"
+              name="message"
               placeholder="Your Message"
             ></textarea>
           <div className="flex">
           
-          <button type="submit" className="btn font-bold w-full"><BsSend size={20}/> SEND`</button>
+          <button type="submit" className="btn bg-gradient-to-l from-[#111b3c] to-[#006e7b] border-none text-white font-bold w-full hover:scale-95"><BsSend size={20}/> SEND</button>
           </div>
           </form>
         </div>
