@@ -20,8 +20,8 @@ const Home = () => {
 
            <Projects/>
          <ScrollToTop/>
-           </div>
          <Contact/>
+           </div>
         </div>
     )}
 export default Home;

@@ -30,7 +30,7 @@ const Navbar = () => {
       </li>
       <li className="hover:text-[#4ecbd9] hover:cursor-pointer">
          <Link 
-      activeClass="active" 
+     className="px-4 py-2"
       to="projects" 
       spy={true} 
       smooth={true} 
@@ -42,10 +42,22 @@ const Navbar = () => {
     </Link>
       </li>
 
-      <li className="hover:text-[#4ecbd9]">
-        <a className="px-4 py-2" href="#contact">
+      <li className=" hover:text-[#4ecbd9] hover:cursor-pointer">
+        {/* <a className="px-4 py-2" href="#contact">
           Contact
-        </a>
+        </a> */}
+         <Link 
+         to="contact"
+      className="px-4 py-2"
+      
+      spy={true} 
+      smooth={true} 
+      offset={50} 
+      duration={500} 
+      
+    >
+      Contact
+    </Link>
       </li>
       <li className="hover:text-[#4ecbd9]">
         <a className="px-4 py-2" href="#about">

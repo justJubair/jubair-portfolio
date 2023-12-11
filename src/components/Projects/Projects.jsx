@@ -23,7 +23,7 @@ const Projects = () => {
         </div>
 
         {/* project container */}
-        <div className="flex flex-col gap-6 py-12">
+        <div className="flex flex-col gap-6 pt-10">
           {/* project one */}
           <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
             <a

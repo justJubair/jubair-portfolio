@@ -2,7 +2,7 @@
 import Lottie from "lottie-react";
 import Container from "../Shared/Container";
 import TypingAnimation from "./TypingAnimation";
-import bannerAnime2 from "../../assets/bannerAnime2.json";
+import bannerAnime2 from "../../assets/animations/bannerAnime2.json";
 import resume from "../../assets/JubairAhmedResume.pdf";
 
 const Banner = () => {
@@ -31,7 +31,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="min-h-screen w-full object-cover bg-no-repeat bg-banner-image">
+    <div id="hero" className="min-h-screen w-full object-cover bg-no-repeat bg-banner-image">
       <Container>
         {/* main container */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
@@ -60,7 +60,7 @@ const Banner = () => {
           </div>
           {/* image */}
           <div className="w-72 md:w-80 lg:w-[500px]">
-            <Lottie animationData={bannerAnime2} />
+            <Lottie animationData={bannerAnime2} loop={true}/>
           </div>
         </div>
       </Container>
