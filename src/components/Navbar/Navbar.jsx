@@ -75,9 +75,8 @@ const Navbar = () => {
             {navLinks}
           </ul>
 
-          <div className="hidden lg:flex items-center gap-2 bg-gradient-to-l from-[#070c1d] to-[#006e7b] px-4 p-2 rounded-lg shadow-xl text-white">
-            <FaLaptopCode size={30} />
-            <h3 className="text-xl italic font-bold">Jubair</h3>
+          <div className="hidden lg:flex items-center gap-2 bg-gradient-to-l from-[#203371] to-[#006e7b] px-4 p-2 rounded-lg shadow-xl text-white">
+            <FaLaptopCode size={25} />
           </div>
         </div>
 
