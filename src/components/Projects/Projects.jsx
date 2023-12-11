@@ -80,23 +80,11 @@ const Projects = () => {
           </div>
           {/* project two */}
           <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
-            <a
-              target="_blank"
-              href="https://worktales-client.web.app"
-              rel="noreferrer"
-            >
-              <img
-                className="w-[2000px] opacity-75 duration-200 hover:opacity-100 hover:cursor-pointer"
-                src={projectImg2}
-                alt="project one"
-              />
-            </a>
-
-            <div className="p-4">
+          <div className="p-4">
               <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
                 Worktales
               </h2>
-              <div className="md:px-4 my-4 text-gray-400">
+              <div className="md:px-4 my-4 text-gray-300">
                 <p className="text-start">
                   Engineered a comprehensive job marketplace allowing users to
                   seamlessly list, update, and delete their posted jobs.
@@ -112,7 +100,7 @@ const Projects = () => {
                 </p>
               </div>
 
-              <div className="flex justify-end gap-4">
+              <div className="flex justify-start gap-4">
                 <a
                   target="_blank"
                   href="https://worktales-client.web.app"
@@ -124,13 +112,26 @@ const Projects = () => {
                 <a
                   target="_blank"
                   href="https://github.com/justJubair/worktales-client"
-                  className="btn btn-outline text-[#617bce] hover:bg-[#2d7e87]"
+                  className="btn btn-outline text-[#9bb2ff] hover:bg-[#2d7e87]"
                   rel="noreferrer"
                 >
                   GITHUB
                 </a>
               </div>
             </div>
+            <a
+              target="_blank"
+              href="https://worktales-client.web.app"
+              rel="noreferrer"
+            >
+              <img
+                className="w-[2000px] opacity-75 duration-200 hover:opacity-100 hover:cursor-pointer"
+                src={projectImg2}
+                alt="project one"
+              />
+            </a>
+
+           
           </div>
           {/* project three */}
           <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
