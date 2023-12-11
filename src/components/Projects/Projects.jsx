@@ -25,7 +25,7 @@ const Projects = () => {
         {/* project container */}
         <div className="flex flex-col gap-6 py-12">
           {/* project one */}
-          <div data-aos="fade-up" className="flex item glass rounded-lg p-4">
+          <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
             <a
               target="_blank"
               href="https://survytics-client.web.app"
@@ -42,7 +42,7 @@ const Projects = () => {
               <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
                 Survytics
               </h2>
-              <div className="px-4 my-4 text-gray-400">
+              <div className="md:px-4 my-4 text-gray-400">
                 <p className="text-start">
                   Implemented a user-friendly survey creation platform, allowing
                   surveyors to effortlessly design surveys with yes/no
@@ -79,7 +79,7 @@ const Projects = () => {
             </div>
           </div>
           {/* project two */}
-          <div data-aos="fade-up" className="flex item glass rounded-lg p-4">
+          <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
             <a
               target="_blank"
               href="https://worktales-client.web.app"
@@ -96,7 +96,7 @@ const Projects = () => {
               <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
                 Worktales
               </h2>
-              <div className="px-4 my-4 text-gray-400">
+              <div className="md:px-4 my-4 text-gray-400">
                 <p className="text-start">
                   Engineered a comprehensive job marketplace allowing users to
                   seamlessly list, update, and delete their posted jobs.
@@ -133,7 +133,7 @@ const Projects = () => {
             </div>
           </div>
           {/* project three */}
-          <div data-aos="fade-up" className="flex item glass rounded-lg p-4">
+          <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
             <a
               target="_blank"
               href="https://movie-mania-peach.vercel.app"
@@ -150,7 +150,7 @@ const Projects = () => {
               <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
                 Movie Mania
               </h2>
-              <div className="px-4 my-4 text-gray-400">
+              <div className="md:px-4 my-4 text-gray-400">
                 <p className="text-start">
                   Developed and designed a visually appealing Netflix-inspired
                   website utilizing modern front-end technologies. Integrated
