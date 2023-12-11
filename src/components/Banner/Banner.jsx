@@ -1,12 +1,15 @@
+import Lottie from "lottie-react";
 import Container from "../Shared/Container";
 import TypingAnimation from "./TypingAnimation";
+import bannerAnime2 from "../../assets/bannerAnime2.json"
 
 const Banner = () => {
   return (
-    <div className="min-h-screen w-full object-cover bg-banner-image">
+    <div className="min-h-screen w-full object-cover bg-no-repeat bg-banner-image">
       <Container>
         {/* main container */}
-        <div className="pt-60">
+        <div className="flex items-center justify-center pt-12">
+
           {/* text content */}
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold text-white">Hi there!</h2>
@@ -17,7 +20,9 @@ const Banner = () => {
             
           </div>
           {/* image */}
-          <div></div>
+          <div>
+            <Lottie animationData={bannerAnime2}/>
+          </div>
         </div>
       </Container>
     </div>
