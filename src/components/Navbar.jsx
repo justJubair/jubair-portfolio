@@ -1,55 +1,55 @@
-import { Link, NavLink } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import { FaLaptopCode } from "react-icons/fa";
 const Navbar = () => {
   const navLinks = (
     <>
-      <li className="hover:text-green-600">
+      <li className="hover:text-[#4ecbd9]">
         <NavLink
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-cyan-600 to-[#24962a] px-4  py-2  text-white rounded"
+              ? "bg-gradient-to-l from-[#111b3c] to-[#006e7b] px-4  py-2  text-white rounded"
               : "px-4 py-2"
           }
         >
           Home
         </NavLink>
       </li>
-      <li className=" hover:text-green-600">
+      <li className=" hover:text-[#4ecbd9]">
         <NavLink
-          to="/surveys"
+          to="/Resume"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-cyan-600 to-[#24962a] px-4 py-2 text-white rounded"
+              ? "bg-gradient-to-l from-[#111b3c] to-[#006e7b] px-4 py-2 text-white rounded"
               : "px-4 py-2"
           }
         >
-          Surveys
+          Resume
         </NavLink>
       </li>
-      <li className=" hover:text-green-500">
+      <li className=" hover:text-[#4ecbd9]">
         <NavLink
-          to="/proMember"
+          to="/projects"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-cyan-600 to-[#24962a] px-4 py-2  text-white rounded"
+              ? "bg-gradient-to-l from-[#111b3c] to-[#006e7b] px-4 py-2  text-white rounded"
               : "px-4 py-2"
           }
         >
-          Pro member
+          Projects
         </NavLink>
       </li>
 
-      <li className="pr-4 hover:text-green-500">
+      <li className="pr-4 hover:text-[#4ecbd9]">
         <NavLink
-          to="/aboutUs"
+          to="/aboutMe"
           className={({ isActive }) =>
             isActive
-              ? "bg-gradient-to-r from-cyan-600 to-[#24962a] px-4 py-2  text-white rounded"
+              ? "bg-gradient-to-l from-[#111b3c] to-[#006e7b] px-4 py-2  text-white rounded"
               : "px-4 py-2"
           }
         >
-          About Us
+          About Me
         </NavLink>
       </li>
     </>
@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="dropdown px-4">
           <label
             tabIndex={0}
-            className="btn btn-ghost lg:hidden text-green-400"
+            className="btn btn-ghost lg:hidden text-[#4ecbd9]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,15 +83,16 @@ const Navbar = () => {
           >
             {navLinks}
           </ul>
-          <img
-            className="hidden w-36 rounded px-4 py-2 bg-gradient-to-r from-cyan-600 to-[#24962a] lg:block shadow-xl"
-            alt="logo"
-          ></img>
+        
+          <div className="hidden lg:flex items-center gap-2 bg-gradient-to-l from-[#070c1d] to-[#006e7b] px-4 p-2 rounded-lg shadow-xl text-white">
+          <FaLaptopCode size={30}/>
+          <h3 className="text-xl italic font-bold">Jubair</h3>
+          </div>
         </div>
 
         <div className="flex items-center pr-4 lg:pr-0">
           <div className=" hidden lg:flex">
-            <ul className="flex  font-semibold">{navLinks}</ul>
+            <ul className="flex text-white font-semibold">{navLinks}</ul>
           </div>
         </div>
       </div>
