@@ -53,7 +53,7 @@ const Banner = () => {
             <TypingAnimation />
             <button
               onClick={handleDownloadResume}
-              className=" btn bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white font-bold hover:text-black"
+              className=" btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-black font-bold hover:scale-105"
             >
               DOWNLOAD RESUME
             </button>
