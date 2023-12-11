@@ -15,7 +15,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className=" hover:text-[#4ecbd9]">
+      <li className="hover:text-[#4ecbd9]">
         <NavLink
           to="/Resume"
           className={({ isActive }) =>
@@ -27,30 +27,21 @@ const Navbar = () => {
           Resume
         </NavLink>
       </li>
-      <li className=" hover:text-[#4ecbd9]">
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-gradient-to-l from-[#111b3c] to-[#006e7b] px-4 py-2  text-white rounded"
-              : "px-4 py-2"
-          }
-        >
+      <li className="hover:text-[#4ecbd9]">
+        <a className="px-4 py-2" href="#projects">
           Projects
-        </NavLink>
+        </a>
       </li>
 
-      <li className="pr-4 hover:text-[#4ecbd9]">
-        <NavLink
-          to="/aboutMe"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-gradient-to-l from-[#111b3c] to-[#006e7b] px-4 py-2  text-white rounded"
-              : "px-4 py-2"
-          }
-        >
-          About Me
-        </NavLink>
+      <li className="hover:text-[#4ecbd9]">
+        <a className="px-4 py-2" href="#contact">
+          Contact
+        </a>
+      </li>
+      <li className="hover:text-[#4ecbd9]">
+        <a className="px-4 py-2" href="#about">
+          About
+        </a>
       </li>
     </>
   );
@@ -83,10 +74,10 @@ const Navbar = () => {
           >
             {navLinks}
           </ul>
-        
+
           <div className="hidden lg:flex items-center gap-2 bg-gradient-to-l from-[#070c1d] to-[#006e7b] px-4 p-2 rounded-lg shadow-xl text-white">
-          <FaLaptopCode size={30}/>
-          <h3 className="text-xl italic font-bold">Jubair</h3>
+            <FaLaptopCode size={30} />
+            <h3 className="text-xl italic font-bold">Jubair</h3>
           </div>
         </div>
 
