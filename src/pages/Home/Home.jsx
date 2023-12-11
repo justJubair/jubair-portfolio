@@ -4,23 +4,24 @@ import Navbar from "../../components/Navbar/Navbar";
 import Projects from "../../components/Projects/Projects";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { animateScroll as scroll} from 'react-scroll';
+import ScrollToTop from "../../utils/ScrollToTop";
+import Contact from "../../components/Contact/Contact";
 const Home = () => {
     useEffect(() => {
         AOS.init();
       }, []);
 
-    //   const handleUp=()=>{
-    //     const scrollToTop = () => {
-    //         scroll.scrollToTop();
-    //       };
-    //   }
+   
     return(
         <div >
             <Navbar/>
            <Banner/>
+           <div className="bg-[#050b1f]">
+
            <Projects/>
-           <button onClick={()=> scroll()}>up</button>
+         <ScrollToTop/>
+           </div>
+         <Contact/>
         </div>
     )}
 export default Home;

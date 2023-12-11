@@ -7,7 +7,7 @@ import Container from "../Shared/Container";
 
 const Projects = () => {
   return (
-    <div id="projects" className=" bg-[#050b1f] text-white text-center">
+    <div id="projects" className="  text-white text-center">
       <Container>
         {/* Title */}
         <div>
