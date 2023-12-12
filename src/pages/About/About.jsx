@@ -1,11 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import AltNavbar from "../../components/Navbar/AltNavbar";
 import profile1 from "../../assets/images/profile1.jpeg";
+import Skillset from "../../components/Skillset/Skillset";
 
 const About = () => {
     return(
         <div>
+            {/* navbar */}
             <AltNavbar/>
+            {/* banner */}
             <div className="h-screen object-cover w-full bg-no-repeat bg-about-image">
                 {/* overlay */}
                 <div className="h-screen bg-blend-overlay bg-gradient-to-l from-[#111b3c]/30 to-[#006e7b]/30 w-full"></div>
@@ -28,6 +31,7 @@ const About = () => {
 
                 </div>
             </div>
+            <Skillset/>
         </div>
     )}
 export default About;
