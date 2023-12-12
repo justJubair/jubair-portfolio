@@ -20,7 +20,7 @@ const About = () => {
                 {/* text content */}
                 <div className=" text-white  lg:w-1/2">
                     {/* title */}
-                    <h1 className="text-2xl lg:text-3xl text-center">Know <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">Who</span> I'M</h1>
+                    <h1 className="text-2xl lg:text-4xl text-center">Know <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">Who</span> I'M</h1>
                     {/* desc */}
                     <div className="bg-gradient-to-r from-[#08153e]/70 to-[#0e1248]/30 p-4 text-sm lg:text-lg space-y-4 rounded-md text-gray-300 mt-4">
                     <p> 👋 Hello there! I'm Jubair Ahmed, a passionate front end web developer based in  Dhaka, Bangladesh.</p>
@@ -40,6 +40,19 @@ const About = () => {
                 </div>
             </div>
             <Skillset/>
+            {/* The days I code */}
+            <div className="pt-8 bg-[#050b1f]">
+          <h2 className="text-center text-white text-4xl font-medium">
+            The days I{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">
+              Code
+            </span>
+          </h2>
+        </div>
+            <div className="pt-6 pb-16 flex justify-center bg-[#050b1f] px-4">
+
+            <img className="bg-[#050b1f]" src="https://github-readme-streak-stats.herokuapp.com?user=justJubair&theme=tokyonight-duo" alt="GitHub Streak" />
+            </div>
         </div>
     )}
 export default About;
