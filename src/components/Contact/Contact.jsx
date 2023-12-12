@@ -4,6 +4,7 @@ import { BsSend } from "react-icons/bs";
 import Lottie from "lottie-react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
   const handleContact = async (e) => {
@@ -52,7 +53,14 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center pt-8">
           {/* animations */}
           <div>
-            <Lottie className="w-96" animationData={contactAnime} />
+            <Lottie className="w-80" animationData={contactAnime} />
+            {/* social icons */}
+            <div className="flex gap-5 justify-center items-center">
+
+            <a target="_blank" href="https://github.com/justJubair" rel="noreferrer"> <FaGithub size={35}/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jubair2" rel="noreferrer"> <FaLinkedin size={35}/></a>
+            <a target="_blank" href="https://www.instagram.com/jubair_ahmeed" rel="noreferrer"> <FaInstagram size={35}/></a>
+            </div>
           </div>
           {/* form */}
           <form

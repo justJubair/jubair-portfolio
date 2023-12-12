@@ -8,9 +8,9 @@ const Footer = () => {
             <p>Copyright &copy; 2023 JA</p>
             </div>
             <div className="flex items-center gap-4">
-            <FaGithub size={25}/>
-            <FaLinkedin size={25}/>
-            <FaInstagram size={25}/>
+            <a target="_blank" href="https://github.com/justJubair" rel="noreferrer"> <FaGithub size={25}/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jubair2" rel="noreferrer"> <FaLinkedin size={25}/></a>
+            <a target="_blank" href="https://www.instagram.com/jubair_ahmeed" rel="noreferrer"> <FaInstagram size={25}/></a>
             </div>
         </div>
     )}

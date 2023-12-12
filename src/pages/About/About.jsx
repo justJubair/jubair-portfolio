@@ -2,6 +2,9 @@
 import AltNavbar from "../../components/Navbar/AltNavbar";
 import profile1 from "../../assets/images/profile1.jpeg";
 import Skillset from "../../components/Skillset/Skillset";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 const About = () => {
     return(
@@ -21,8 +24,13 @@ const About = () => {
                     {/* desc */}
                     <div className="bg-gradient-to-r from-[#08153e]/70 to-[#0e1248]/30 p-4 text-sm lg:text-lg space-y-4 rounded-md text-gray-300 mt-4">
                     <p> 👋 Hello there! I'm Jubair Ahmed, a passionate front end web developer based in  Dhaka, Bangladesh.</p>
-                    <p className="hidden md:block"> 💡 What I bring to the table: Responsive Design: Crafted to look amazing on any device, ensuring a consistent and enjoyable user experience. </p>
-                    <p className="hidden md:block"> Cutting-edge Technologies: Proficient in HTML, CSS, JavaScript, and the latest front-end frameworks to bring your vision to life.</p>
+                    <p className="hidden md:block"> 💡 What I bring to the table: Responsive Design: Crafted to look amazing on any device, ensuring a consistent and enjoyable user experience.</p>
+                    <p className="hidden md:flex items-center gap-2"> <MdEmail size={25}/> jubair.ahmed2838@gmail.com</p>
+                  <div className="hidden md:flex items-center gap-3">
+                  <a target="_blank" href="https://www.linkedin.com/in/jubair2" rel="noreferrer"> <FaLinkedin size={25}/></a>
+                   <a target="_blank" href="https://github.com/justJubair" rel="noreferrer"> <FaGithub size={25}/></a>
+                   <a target="_blank" href="https://www.instagram.com/jubair_ahmeed" rel="noreferrer"> <FaInstagram size={25}/></a>
+                  </div>
                     </div>
                 </div>
 
