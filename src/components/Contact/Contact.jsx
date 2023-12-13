@@ -39,7 +39,7 @@ const Contact = () => {
         {/* title */}
        
         <div>
-          <h2 className="text-center text-4xl font-medium ">
+          <h2 className="animate-pulse text-center text-4xl font-medium ">
             Contact{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">
               Me

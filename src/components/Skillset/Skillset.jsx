@@ -8,7 +8,7 @@ const Skillset = () => {
         {/* title */}
        
         <div className="pt-16">
-          <h2 className="text-center text-white text-4xl font-medium">
+          <h2 className="animate-pulse text-center text-white text-4xl font-medium">
             Professional{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">
               Skillset

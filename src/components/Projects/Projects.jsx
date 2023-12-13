@@ -10,7 +10,7 @@ const Projects = () => {
       <Container>
         {/* Title */}
           <div>
-            <h2 className="text-center text-4xl font-medium pt-20">
+            <h2 className="animate-pulse text-center text-4xl font-medium pt-20">
               My Recent{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">
                 Works
