@@ -12,7 +12,7 @@ const About = () => {
             {/* navbar */}
             <AltNavbar/>
             {/* banner */}
-            <div className="h-screen object-cover w-full bg-no-repeat bg-about-image">
+            <div className="relative h-screen object-cover w-full bg-no-repeat bg-about-image">
                 {/* overlay */}
                 <div className="h-screen bg-blend-overlay bg-gradient-to-l from-[#111b3c]/30 to-[#006e7b]/30 w-full"></div>
                 {/* main container */}
@@ -44,6 +44,7 @@ const About = () => {
             </div>
             <Skillset/>
             {/* The days I code */}
+            {/* title */}
             <div className="pt-8 bg-[#050b1f]">
           <h2 className="text-center text-white text-4xl font-medium">
             The days I{" "}

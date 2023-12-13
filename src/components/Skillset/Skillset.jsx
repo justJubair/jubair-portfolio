@@ -7,7 +7,7 @@ const Skillset = () => {
     <div className="bg-[#050b1f]">
       <Container>
         {/* title */}
-        <ScrollAnimation animateIn='fadeIn' duration={5}>
+        <ScrollAnimation animateIn='fadeIn' duration={3}>
         <div className="pt-16">
           <h2 className="text-center text-white text-4xl font-medium">
             Professional{" "}
