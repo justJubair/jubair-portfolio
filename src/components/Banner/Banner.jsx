@@ -33,6 +33,8 @@ const Banner = () => {
 
   return (
     <div id="hero" className="min-h-screen w-full object-cover bg-no-repeat bg-banner-image">
+      {/* overlay */}
+      <div className="min-h-screen bg-blend-overlay absolute bg-black/20 w-full"></div>
       <Container>
         {/* main container */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">

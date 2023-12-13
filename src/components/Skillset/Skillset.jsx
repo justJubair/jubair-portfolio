@@ -1,10 +1,13 @@
 import { FaReact } from "react-icons/fa";
 import { SiBootstrap, SiCss3, SiExpress, SiFirebase, SiHtml5, SiJavascript, SiMongodb, SiNodedotjs, SiTailwindcss } from "react-icons/si";
 import Container from "../Shared/Container";
+import ScrollAnimation from "react-animate-on-scroll";
 const Skillset = () => {
   return (
     <div className="bg-[#050b1f]">
       <Container>
+        {/* title */}
+        <ScrollAnimation animateIn='fadeIn' duration={5}>
         <div className="pt-16">
           <h2 className="text-center text-white text-4xl font-medium">
             Professional{" "}
@@ -13,6 +16,7 @@ const Skillset = () => {
             </span>
           </h2>
         </div>
+        </ScrollAnimation>
 
         {/* skill icons */}
         <div className="flex flex-wrap gap-6 lg:gap-5 max-w-sm  md:max-w-xl lg:max-w-3xl py-8 mx-auto">

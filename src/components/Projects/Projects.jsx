@@ -2,7 +2,7 @@
 import projectImg1 from "../../assets/images/project1.png";
 import projectImg2 from "../../assets/images/project2.png";
 import projectImg3 from "../../assets/images/project3.png";
-
+import ScrollAnimation from "react-animate-on-scroll";
 import Container from "../Shared/Container";
 
 const Projects = () => {
@@ -10,22 +10,27 @@ const Projects = () => {
     <div id="projects" className="  text-white text-center">
       <Container>
         {/* Title */}
-        <div>
-          <h2 className="text-center text-4xl font-medium pt-20">
-            My Recent{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">
-              Works
-            </span>
-          </h2>
-          <p className="text-lg my-2">
-            Here are a few projects I've worked on recently
-          </p>
-        </div>
+        <ScrollAnimation animateIn='fadeIn' duration={5}>
+          <div>
+            <h2 className="text-center text-4xl font-medium pt-20">
+              My Recent{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">
+                Works
+              </span>
+            </h2>
+            <p className="text-lg my-2">
+              Here are a few projects I've worked on recently
+            </p>
+          </div>
+        </ScrollAnimation>
 
         {/* project container */}
         <div className="flex flex-col gap-6 pt-10">
           {/* project one */}
-          <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col lg:flex-row item glass rounded-lg p-4"
+          >
             <a
               target="_blank"
               href="https://survytics-client.web.app"
@@ -79,8 +84,11 @@ const Projects = () => {
             </div>
           </div>
           {/* project two */}
-          <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
-          <div className="p-4">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col lg:flex-row item glass rounded-lg p-4"
+          >
+            <div className="p-4">
               <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
                 Worktales
               </h2>
@@ -130,11 +138,12 @@ const Projects = () => {
                 alt="project one"
               />
             </a>
-
-           
           </div>
           {/* project three */}
-          <div data-aos="fade-up" className="flex flex-col lg:flex-row item glass rounded-lg p-4">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col lg:flex-row item glass rounded-lg p-4"
+          >
             <a
               target="_blank"
               href="https://movie-mania-peach.vercel.app"
