@@ -37,7 +37,7 @@ const Banner = () => {
         {/* main container */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
           {/* text content */}
-          <div  className="space-y-4 w-80 md:w-[450px]">
+          <div data-aos="fade-up" data-aos-duration="3000" className="space-y-4 w-80 md:w-[450px]">
             <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
               Hi there!
             </h2>
@@ -61,7 +61,7 @@ const Banner = () => {
             </button>
           </div>
           {/* image */}
-          <div className="w-72 md:w-80 lg:w-[500px]">
+          <div data-aos="fade-down" data-aos-duration="3000" className="w-72 md:w-80 lg:w-[500px]">
             <Lottie animationData={bannerAnime2} loop={true}/>
           </div>
         </div>
