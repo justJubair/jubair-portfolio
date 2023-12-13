@@ -5,7 +5,6 @@ import Lottie from "lottie-react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import ScrollAnimation from "react-animate-on-scroll";
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
   const handleContact = async (e) => {
@@ -38,7 +37,7 @@ const Contact = () => {
     <Container>
       <div id="contact" className="py-20 text-white">
         {/* title */}
-        <ScrollAnimation animateIn='fadeIn' duration={5}>
+       
         <div>
           <h2 className="text-center text-4xl font-medium ">
             Contact{" "}
@@ -50,7 +49,7 @@ const Contact = () => {
             Let's get in touch, and build great projects
           </p>
         </div>
-        </ScrollAnimation >
+        
         {/* form */}
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center pt-8">
           {/* animations */}

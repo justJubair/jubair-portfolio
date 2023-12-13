@@ -2,7 +2,6 @@
 import projectImg1 from "../../assets/images/project1.png";
 import projectImg2 from "../../assets/images/project2.png";
 import projectImg3 from "../../assets/images/project3.png";
-import ScrollAnimation from "react-animate-on-scroll";
 import Container from "../Shared/Container";
 
 const Projects = () => {
@@ -10,7 +9,6 @@ const Projects = () => {
     <div id="projects" className="  text-white text-center">
       <Container>
         {/* Title */}
-        <ScrollAnimation animateIn='fadeIn' duration={5}>
           <div>
             <h2 className="text-center text-4xl font-medium pt-20">
               My Recent{" "}
@@ -22,7 +20,6 @@ const Projects = () => {
               Here are a few projects I've worked on recently
             </p>
           </div>
-        </ScrollAnimation>
 
         {/* project container */}
         <div className="flex flex-col gap-6 pt-10">
