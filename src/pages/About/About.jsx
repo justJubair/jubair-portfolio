@@ -18,7 +18,7 @@ const About = () => {
                 {/* main container */}
                 <div className="absolute top-14 md:top-32 lg:top-1/4 flex flex-col-reverse md:flex-row items-center gap-4 lg:gap-7  justify-center w-full px-4 md:items-start">
                 {/* text content */}
-                <div className=" text-white  lg:w-1/2">
+                <div data-aos="fade-down" data-aos-duration="1500" className=" text-white  lg:w-1/2">
                     {/* title */}
                     <h1 className="text-2xl lg:text-4xl text-center">Know <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]">Who</span> I'M</h1>
                     {/* desc */}
@@ -35,7 +35,10 @@ const About = () => {
                 </div>
 
                 {/* profile image */}
-                    <img className="w-72 lg:w-96 rounded-md opacity-75" src={profile1} alt="profile" />
+                <div data-aos="fade-up" data-aos-duration="1500">
+
+                    <img  className="w-72 lg:w-96 rounded-md opacity-75" src={profile1} alt="profile" />
+                </div>
 
                 </div>
             </div>

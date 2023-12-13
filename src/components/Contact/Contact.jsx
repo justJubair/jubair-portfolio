@@ -52,7 +52,7 @@ const Contact = () => {
         {/* form */}
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center pt-8">
           {/* animations */}
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1500">
             <Lottie className="w-80" animationData={contactAnime} />
             {/* social icons */}
             <div className="flex gap-5 justify-center items-center">
@@ -64,6 +64,7 @@ const Contact = () => {
           </div>
           {/* form */}
           <form
+          data-aos="fade-down" data-aos-duration="1500"
             onSubmit={handleContact}
             className="p-8 bg-gradient-to-r from-[#111b3c] to-[#174348] rounded-md space-y-6"
           >
