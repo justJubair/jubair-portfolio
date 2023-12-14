@@ -41,7 +41,7 @@ const Banner = () => {
           {/* text content */}
           <div data-aos="fade-up" data-aos-duration="3000" className="space-y-4 w-80 md:w-[450px]">
             <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
-              Hi 
+              Hi there!
             </h2>
             <h1 className="text-4xl md:text-5xl font-bold text-white">
               I'm{" "}
