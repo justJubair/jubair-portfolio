@@ -1,5 +1,3 @@
-import { FaLaptopCode } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { MdOutlineFileDownload } from "react-icons/md";
