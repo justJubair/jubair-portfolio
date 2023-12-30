@@ -4,14 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "banner-image": "url('./assets/images/banner.jpg')",
-        "about-image": "url('./assets/images/about.jpg')"
-      }
-    },
-  },
+  
   plugins: [require("daisyui")],
 }
 

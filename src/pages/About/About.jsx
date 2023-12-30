@@ -12,7 +12,7 @@ const About = () => {
             {/* navbar */}
             <AltNavbar/>
             {/* banner */}
-            <div className="relative h-screen object-cover w-full bg-no-repeat bg-about-image">
+            <div className="relative h-screen object-cover bg-center w-full bg-no-repeat bg-[url('https://raw.githubusercontent.com/justJubair/jubair-portfolio/main/src/assets/images/about.jpg')]">
                 {/* overlay */}
                 <div className="h-screen bg-blend-overlay bg-gradient-to-l from-[#111b3c]/30 to-[#006e7b]/30 w-full"></div>
                 {/* main container */}
