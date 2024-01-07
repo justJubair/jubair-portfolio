@@ -22,7 +22,8 @@ const About = () => {
       {/* overlay */}
       <div className="h-screen absolute top-0 left-0 bg-black/40 w-full"></div>
       {/* main container */}
-      <div className="absolute top-14 md:top-32 lg:top-1/4 flex flex-col-reverse md:flex-row items-center gap-4 lg:gap-7  justify-center w-full px-4 md:items-start">
+      <div className="flex justify-center items-center">
+      <div className="absolute top-1/4 flex flex-col-reverse md:flex-row items-center gap-4 lg:gap-7  justify-center w-full px-4 md:items-start">
         {/* text content */}
         <div
           data-aos="fade-down"
@@ -94,6 +95,7 @@ const About = () => {
             alt="profile"
           />
         </div>
+      </div>
       </div>
 
       <Skillset />
