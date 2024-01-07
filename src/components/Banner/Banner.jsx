@@ -41,13 +41,13 @@ const Banner = () => {
       <div className="h-screen top-0 left-0 absolute bg-black/50 w-full"></div>
       <Container>
         {/* main container */}
-        <div className="absolute top-0 left-52 flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
+        <div className="absolute top-36 md:top-0 left-9 md:left-16 lg:left-52 flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
           {/* text content */}
-          <div data-aos="fade-up" data-aos-duration="3000" className="space-y-4 w-80 md:w-[450px]">
+          <div data-aos="fade-up" data-aos-duration="3000" className="space-y-4 w-72 md:w-96 lg:w-[450px]">
             <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
               Hi there!
             </h2>
-            <h1 className="text-4xl md:text-5xl font-bold text-white">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white">
               I'm{" "}
               <span
                 className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]
@@ -60,14 +60,14 @@ const Banner = () => {
             <TypingAnimation />
             <button
               onClick={handleDownloadResume}
-              className=" btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white font-bold hover:scale-105"
+              className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white font-bold hover:scale-105"
             >
               <MdOutlineFileDownload size={25}/>
               DOWNLOAD RESUME
             </button>
           </div>
           {/* image */}
-          <div data-aos="fade-down" data-aos-duration="3000" className="w-72 md:w-80 lg:w-[500px]">
+          <div data-aos="fade-down" data-aos-duration="3000" className="hidden md:block md:w-80 lg:w-[500px]">
             <Lottie animationData={bannerAnime2} loop={true}/>
           </div>
         </div>

@@ -1,6 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
 
 const TypingAnimation = () => {
+   
+
+
+   
     return(
        <div>
          <TypeAnimation
@@ -17,7 +21,7 @@ const TypingAnimation = () => {
         ]}
         wrapper="span"
         speed={50}
-        style={{ fontSize: '2em', display: 'inline-block', color: "#43aeba", fontWeight:"600" }}
+        style={{ fontSize: "2em", display: 'inline-block', color: "#43aeba", fontWeight:"600" }}
         repeat={Infinity}
       />
        </div>

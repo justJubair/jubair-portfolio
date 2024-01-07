@@ -41,7 +41,7 @@ const Projects = () => {
             </a>
 
             <div className="p-4">
-              <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
+              <h2 className="text-lg font-semibold border-b md:w-1/3 pb-1 mx-auto">
                 Survytics
               </h2>
               <div className="md:px-4 my-4 text-gray-400">
@@ -86,7 +86,7 @@ const Projects = () => {
             className="flex flex-col lg:flex-row item glass rounded-lg p-4"
           >
             <div className="p-4">
-              <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
+              <h2 className="text-lg font-semibold border-b md:w-1/3 pb-1 mx-auto">
                 Worktales
               </h2>
               <div className="md:px-4 my-4 text-gray-300">
@@ -154,7 +154,7 @@ const Projects = () => {
             </a>
 
             <div className="p-4">
-              <h2 className="text-lg font-semibold border-b w-1/3 pb-1 mx-auto">
+              <h2 className="text-lg font-semibold border-b md:w-1/3 pb-1 mx-auto">
                 Movie Mania
               </h2>
               <div className="md:px-4 my-4 text-gray-400">
