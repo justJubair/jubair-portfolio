@@ -27,12 +27,12 @@ Install all the dependencies
 npm install
 ```
 
-Create a free account on [Formspree](https://formspree.io/login) and replace the form endpoint on *.env.local* file with your own credential
+Create a free account on [Formspree](https://formspree.io/login) and replace the form endpoint on **.env.local** file with your own credential
 ```
 VITE_FORM_ENDPOINT=Your_endpoint
 ```
 
-You're done, now *RUN* the application
+You're done, now **RUN** the application
 ```
 npm run dev
 ```
