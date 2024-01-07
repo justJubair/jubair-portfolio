@@ -14,4 +14,27 @@
 
 - Highlighted three key projects on the home page, including links to live sites and GitHub repositories for each project, showcasing technical expertise and project management skills.
 
+- Created an about page that visually represents skills with logos of relevant technologies and dynamically displays current GitHub contributions as a state.
+
+## Getting Started
+Run the project locally, clone the repository
+```
+git clone https://github.com/justJubair/jubair-portfolio.git
+```
+
+Install all the dependencies
+```
+npm install
+```
+
+Create a free account on [Formspree](https://formspree.io/login) and replace the form endpoint on *.env.local* file with your own credential
+```
+VITE_FORM_ENDPOINT=Your_endpoint
+```
+
+You're done, now *RUN* the application
+```
+npm run dev
+```
+
 
