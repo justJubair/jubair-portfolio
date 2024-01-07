@@ -60,10 +60,10 @@ const Banner = () => {
             <TypingAnimation />
             <button
               onClick={handleDownloadResume}
-              className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white font-bold hover:scale-105"
+              className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white uppercase font-bold hover:scale-105"
             >
               <MdOutlineFileDownload size={25}/>
-              DOWNLOAD RESUME
+              download resume
             </button>
           </div>
           {/* image */}
