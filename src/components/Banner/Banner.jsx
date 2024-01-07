@@ -6,6 +6,9 @@ import bannerAnime2 from "../../assets/animations/bannerAnime2.json";
 import { MdOutlineFileDownload } from "react-icons/md";
 import resume from "../../assets/JubairAhmedResume.pdf";
 
+// banner video
+import bannerVideo from "../../assets/images/banner.mp4"
+
 const Banner = () => {
 
   const handleDownloadResume = () => {
@@ -32,12 +35,13 @@ const Banner = () => {
   };
 
   return (
-    <div id="hero" className="h-screen w-full bg-center object-cover bg-no-repeat bg-[url('https://raw.githubusercontent.com/justJubair/jubair-portfolio/main/src/assets/images/banner.jpg')]">
+    <>
+    <video className="h-screen object-cover w-full" src={bannerVideo} autoPlay loop muted/>
       {/* overlay */}
-      <div className="min-h-screen bg-blend-overlay absolute bg-black/40 w-full"></div>
+      <div className="h-screen top-0 left-0 absolute bg-black/50 w-full"></div>
       <Container>
         {/* main container */}
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
+        <div className="absolute top-0 left-52 flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
           {/* text content */}
           <div data-aos="fade-up" data-aos-duration="3000" className="space-y-4 w-80 md:w-[450px]">
             <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
@@ -68,7 +72,8 @@ const Banner = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </>
+   
   );
 };
 export default Banner;
