@@ -7,10 +7,9 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import resume from "../../assets/JubairAhmedResume.pdf";
 
 // banner video
-import bannerVideo from "../../assets/images/banner.mp4"
+import bannerVideo from "../../assets/images/banner.mp4";
 
 const Banner = () => {
-
   const handleDownloadResume = () => {
     // Specify the URL of the PDF file you want to download
     const pdfUrl = resume;
@@ -36,47 +35,63 @@ const Banner = () => {
 
   return (
     <>
-    <video className="h-screen object-cover w-full" src={bannerVideo} autoPlay loop muted/>
+      <video
+        className="h-screen object-cover w-full"
+        src={bannerVideo}
+        autoPlay
+        loop
+        muted
+      />
       {/* overlay */}
       <div className="h-screen top-0 left-0 absolute bg-black/50 w-full"></div>
       <Container>
         {/* main container */}
         <div className="flex justify-center items-center">
-        <div className="absolute top-1/4 md:top-0 flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
-          {/* text content */}
-          <div data-aos="fade-up" data-aos-duration="3000" className="space-y-4 w-72 md:w-80 lg:w-[450px]">
-            <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
-              Hi there!
-            </h2>
-            <h1 className="text-4xl lg:text-5xl font-bold text-white">
-              I'm{" "}
-              <span
-                className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]
-            "
-              >
-                Jubair Ahmed
-              </span>
-            </h1>
-            {/* typing animation */}
-            <TypingAnimation />
-            <button
-              onClick={handleDownloadResume}
-              className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white uppercase font-bold hover:scale-105"
+          <div className="absolute top-1/4 md:top-0 flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
+            {/* text content */}
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="relative space-y-4 w-72 md:w-[360px] lg:w-[450px]"
             >
-              <MdOutlineFileDownload size={25}/>
-              download resume
-            </button>
-          </div>
-          {/* image */}
-          <div data-aos="fade-down" data-aos-duration="3000" className="hidden md:block md:w-96 lg:w-[480px] xl:w-[500px]">
-            <Lottie animationData={bannerAnime2} loop={true}/>
+              <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
+                Hi there!
+              </h2>
+              <h1 className="text-4xl lg:text-5xl font-bold text-white">
+                I'm{" "}
+                <span
+                  className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]
+            "
+                >
+                  Jubair Ahmed
+                </span>
+              </h1>
+              {/* typing animation */}
+              <TypingAnimation />
+
+             {/* download resume button */}
+             <div className="absolute top-48 md:relative md:top-0">
+             <button
+                onClick={handleDownloadResume}
+                className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white uppercase font-bold hover:scale-105"
+              >
+                <MdOutlineFileDownload size={25} />
+                download resume
+              </button>
+             </div>
+            </div>
+            {/* image */}
+            <div
+              data-aos="fade-down"
+              data-aos-duration="3000"
+              className="hidden md:block md:w-[350px] lg:w-[480px] xl:w-[500px]"
+            >
+              <Lottie animationData={bannerAnime2} loop={true} />
+            </div>
           </div>
         </div>
-        </div>
-       
       </Container>
     </>
-   
   );
 };
 export default Banner;
