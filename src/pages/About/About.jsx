@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import AltNavbar from "../../components/Navbar/AltNavbar";
-import profile1 from "../../assets/images/profile1.jpeg";
+import profile1 from "../../assets/images/headshoot-02.jpeg";
 import Skillset from "../../components/Skillset/Skillset";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa6";
