@@ -3,8 +3,12 @@ import Lottie from "lottie-react";
 import Container from "../Shared/Container";
 import TypingAnimation from "./TypingAnimation";
 import bannerAnime2 from "../../assets/animations/bannerAnime2.json";
-import { MdOutlineFileDownload } from "react-icons/md";
 import resume from "../../assets/JubairAhmedResume.pdf";
+// icons
+import { MdOutlineFileDownload } from "react-icons/md";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+
+
 
 // banner video
 import bannerVideo from "../../assets/images/banner.mp4";
@@ -69,16 +73,44 @@ const Banner = () => {
               {/* typing animation */}
               <TypingAnimation />
 
-             {/* download resume button */}
-             <div className="absolute top-48 md:relative md:top-0">
-             <button
-                onClick={handleDownloadResume}
-                className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white uppercase font-bold hover:scale-105"
-              >
-                <MdOutlineFileDownload size={25} />
-                download resume
-              </button>
-             </div>
+              {/* download resume button */}
+              <div className="absolute top-48 md:relative md:top-0">
+                <button
+                  onClick={handleDownloadResume}
+                  className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white uppercase font-bold hover:scale-105"
+                >
+                  <MdOutlineFileDownload size={25} />
+                  download resume
+                </button>
+              </div>
+
+              {/* social icons */}
+              <div className="hidden md:flex gap-4 text-gray-500  items-center">
+                <a
+                  target="_blank"
+                  href="https://github.com/justJubair"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <FaGithub size={25} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/jubair2"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <FaLinkedin size={25} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/jubair_ahmeed"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <FaInstagram size={25} />
+                </a>
+              </div>
             </div>
             {/* image */}
             <div
