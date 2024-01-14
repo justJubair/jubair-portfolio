@@ -87,6 +87,7 @@ const Banner = () => {
               {/* social icons */}
               <div className="hidden md:flex gap-4 text-gray-500  items-center">
                 <a
+                  className="hover:text-white"
                   target="_blank"
                   href="https://github.com/justJubair"
                   rel="noreferrer"
@@ -95,6 +96,7 @@ const Banner = () => {
                   <FaGithub size={25} />
                 </a>
                 <a
+                className="hover:text-white"
                   target="_blank"
                   href="https://www.linkedin.com/in/jubair2"
                   rel="noreferrer"
@@ -103,6 +105,7 @@ const Banner = () => {
                   <FaLinkedin size={25} />
                 </a>
                 <a
+                className="hover:text-white"
                   target="_blank"
                   href="https://www.instagram.com/jubair_ahmeed"
                   rel="noreferrer"
