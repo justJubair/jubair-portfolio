@@ -42,6 +42,56 @@ const Projects = () => {
 
             <div className="p-4">
               <h2 className="text-lg font-semibold border-b md:w-1/3 pb-1 mx-auto">
+                FitTrack
+              </h2>
+              <div className="md:px-4 my-4 text-gray-400">
+                <p className="text-start">
+                Led a team of six developers to create an resourceful fitness tracking app, featuring personalized workout plans and gamified challenges. Engineered a seamless user experience by implementing a customizable diet plan system. Integrated Zegocloud for video calls, allowing users to connect with trainers for real-time support. Personally developed the AI guidance system, empowering users with an interactive ChatGPT-powered personal trainer.
+                </p>
+                <p className="text-start mt-1">
+                  <span className="font-bold">Developed with:</span> Next.js, Material UI, NextAuth, Mongoose, Express, Node.js.
+                </p>
+              </div>
+
+              <div className="flex justify-end gap-4">
+                <a
+                  target="_blank"
+                  href="https://survytics-client.web.app"
+                  className="btn border-none text-black duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] hover:scale-105"
+                  rel="noreferrer"
+                >
+                  LIVE SITE
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/justJubair/survytics-client"
+                  className="btn btn-outline text-[#617bce] hover:bg-[#2d7e87]"
+                  rel="noreferrer"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* project one */}
+          <div
+            data-aos="fade-up"
+            className="flex flex-col lg:flex-row item glass rounded-lg p-4"
+          >
+            <a
+              target="_blank"
+              href="https://survytics-client.web.app"
+              rel="noreferrer"
+            >
+              <img
+                className="w-[2000px] opacity-75 duration-200 hover:opacity-100 hover:cursor-pointer"
+                src={projectImg1}
+                alt="project one"
+              />
+            </a>
+
+            <div className="p-4">
+              <h2 className="text-lg font-semibold border-b md:w-1/3 pb-1 mx-auto">
                 Survytics
               </h2>
               <div className="md:px-4 my-4 text-gray-400">
