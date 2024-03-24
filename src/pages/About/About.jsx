@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 // about image
 import aboutImg from "../../assets/images/banner.jpg";
+import VideoResume from "../../components/VideoResume/VideoResume";
 
 const About = () => {
   return (
@@ -98,7 +99,12 @@ const About = () => {
       </div>
       </div>
 
+    {/* video resume */}
+    <VideoResume/>
+
+    {/* skiss */}
       <Skillset />
+
       {/* The days I code */}
       {/* title */}
       <div className="pt-8 bg-[#050b1f]">
