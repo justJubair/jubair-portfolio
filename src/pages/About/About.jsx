@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import AltNavbar from "../../components/Navbar/AltNavbar";
-import profile1 from "../../assets/images/headshoot-02.jpeg";
 import Skillset from "../../components/Skillset/Skillset";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 // about image
 import aboutImg from "../../assets/images/banner.jpg";
-import VideoResume from "../../components/VideoResume/VideoResume";
+
 
 const About = () => {
   return (
@@ -88,21 +87,17 @@ const About = () => {
           </div>
         </div>
 
-        {/* profile image */}
+        {/* video resume */}
         <div data-aos="fade-up" data-aos-duration="1500">
-          <img
-            className="w-72 md:w-[600px] lg:w-96 rounded-md opacity-75"
-            src={profile1}
-            alt="profile"
-          />
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hV93s5Av6Go?si=-c-T-PZRvBTWW52d" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
       </div>
 
-    {/* video resume */}
-    <VideoResume/>
+  
 
-    {/* skiss */}
+    {/* skils */}
       <Skillset />
 
       {/* The days I code */}
