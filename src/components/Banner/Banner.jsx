@@ -5,7 +5,7 @@ import TypingAnimation from "./TypingAnimation";
 import bannerAnime2 from "../../assets/animations/bannerAnime2.json";
 import resume from "../../assets/JubairAhmedResume.pdf";
 // icons
-import { MdOutlineFileDownload } from "react-icons/md";
+// import { MdOutlineFileDownload } from "react-icons/md";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 // banner video
@@ -73,13 +73,30 @@ const Banner = () => {
 
               {/* download resume button */}
               <div className="absolute top-48 md:relative md:top-0">
-                <button
-                  onClick={handleDownloadResume}
+                <a
+                  target="_blank"
+                  href="https://calendly.com/jubair-ahmed/free-consultation"
+                  rel="noreferrer"
+                  // onClick={handleDownloadResume}
                   className="btn duration-300 bg-gradient-to-r from-[#617bce] to-[#43aeba] border-none text-white uppercase font-bold hover:scale-105"
                 >
-                  <MdOutlineFileDownload size={25} />
-                  download resume
-                </button>
+                  {/* <MdOutlineFileDownload size={25} /> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+                    />
+                  </svg>
+                  Free Consultation
+                </a>
               </div>
 
               {/* social icons */}

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 const Navbar = () => {
   const navLinks = (
     <>
@@ -16,7 +16,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="hover:text-[#4ecbd9]">
+      {/* <li className="hover:text-[#4ecbd9]">
         <NavLink
           to="/resume"
           className={({ isActive }) =>
@@ -27,40 +27,37 @@ const Navbar = () => {
         >
           Resume
         </NavLink>
-      </li>
+      </li> */}
       <li className="hover:text-[#4ecbd9] hover:cursor-pointer">
-         <Link 
-     className="px-4 py-2"
-      to="projects" 
-      spy={true} 
-      smooth={true} 
-      offset={20} 
-      duration={500} 
-      
-    >
-      Projects
-    </Link>
+        <Link
+          className="px-4 py-2"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={20}
+          duration={500}
+        >
+          Projects
+        </Link>
       </li>
 
       <li className=" hover:text-[#4ecbd9] hover:cursor-pointer">
         {/* <a className="px-4 py-2" href="#contact">
           Contact
         </a> */}
-         <Link 
-         to="contact"
-      className="px-4 py-2"
-      
-      spy={true} 
-      smooth={true} 
-      offset={50} 
-      duration={500} 
-      
-    >
-      Contact
-    </Link>
+        <Link
+          to="contact"
+          className="px-4 py-2"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          Contact
+        </Link>
       </li>
       <li className="hover:text-[#4ecbd9]">
-      <NavLink
+        <NavLink
           to="/about"
           className={({ isActive }) =>
             isActive

@@ -15,7 +15,7 @@ const AltNavbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="hover:text-[#4ecbd9]">
+      {/* <li className="hover:text-[#4ecbd9]">
         <NavLink
           to="/resume"
           className={({ isActive }) =>
@@ -26,10 +26,10 @@ const AltNavbar = () => {
         >
           Resume
         </NavLink>
-      </li>
-     
+      </li> */}
+
       <li className="hover:text-[#4ecbd9]">
-      <NavLink
+        <NavLink
           to="/about"
           className={({ isActive }) =>
             isActive
