@@ -8,8 +8,6 @@ import resume from "../../assets/JubairAhmedResume.pdf";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-
-
 // banner video
 import bannerVideo from "../../assets/images/banner.mp4";
 
@@ -96,18 +94,18 @@ const Banner = () => {
                   <FaGithub size={25} />
                 </a>
                 <a
-                className="hover:text-white"
+                  className="hover:text-white"
                   target="_blank"
-                  href="https://www.linkedin.com/in/jubair2"
+                  href="https://www.linkedin.com/in/jubairdev"
                   rel="noreferrer"
                 >
                   {" "}
                   <FaLinkedin size={25} />
                 </a>
                 <a
-                className="hover:text-white"
+                  className="hover:text-white"
                   target="_blank"
-                  href="https://www.instagram.com/jubair_ahmeed"
+                  href="https://www.instagram.com/jubairthedevdude"
                   rel="noreferrer"
                 >
                   {" "}

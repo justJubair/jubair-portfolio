@@ -37,7 +37,7 @@ const Contact = () => {
     <Container>
       <div id="contact" className="py-20 text-white">
         {/* title */}
-       
+
         <div>
           <h2 className="animate-pulse text-center text-4xl font-medium ">
             Contact{" "}
@@ -49,7 +49,7 @@ const Contact = () => {
             Let's get in touch, and build great projects
           </p>
         </div>
-        
+
         {/* form */}
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center pt-8">
           {/* animations */}
@@ -57,15 +57,39 @@ const Contact = () => {
             <Lottie className="w-80" animationData={contactAnime} />
             {/* social icons */}
             <div className="flex gap-5 justify-center items-center">
-
-            <a target="_blank" href="https://github.com/justJubair" rel="noreferrer"> <FaGithub size={35}/></a>
-            <a target="_blank" href="https://www.linkedin.com/in/jubair2" rel="noreferrer"> <FaLinkedin size={35}/></a>
-            <a target="_blank" href="https://www.instagram.com/jubair_ahmeed" rel="noreferrer"> <FaInstagram size={35}/></a>
+              <a
+                className="hover:scale-110 duration-100"
+                target="_blank"
+                href="https://github.com/justJubair"
+                rel="noreferrer"
+              >
+                {" "}
+                <FaGithub size={35} />
+              </a>
+              <a
+                className="hover:scale-110 duration-100"
+                target="_blank"
+                href="https://www.linkedin.com/in/jubairdev"
+                rel="noreferrer"
+              >
+                {" "}
+                <FaLinkedin size={35} />
+              </a>
+              <a
+                className="hover:scale-110 duration-100"
+                target="_blank"
+                href="https://www.instagram.com/jubairthedevdude"
+                rel="noreferrer"
+              >
+                {" "}
+                <FaInstagram size={35} />
+              </a>
             </div>
           </div>
           {/* form */}
           <form
-          data-aos="fade-down" data-aos-duration="1500"
+            data-aos="fade-down"
+            data-aos-duration="1500"
             onSubmit={handleContact}
             className="p-8 bg-gradient-to-r from-[#111b3c] to-[#174348] rounded-md space-y-6"
           >
