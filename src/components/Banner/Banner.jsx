@@ -49,17 +49,17 @@ const Banner = () => {
       <Container>
         {/* main container */}
         <div className="flex justify-center items-center">
-          <div className="absolute top-1/4 md:top-0 flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12">
+          <div className="absolute top-1/4 md:top-0 flex flex-col-reverse md:flex-row items-center justify-center py-4 md:pt-28 lg:pt-12 2xl:top-1/2 2xl:left-1/2 2xl:transform 2xl:-translate-x-1/2 2xl:-translate-y-1/2">
             {/* text content */}
             <div
               data-aos="fade-up"
               data-aos-duration="3000"
-              className="relative space-y-4 w-72 md:w-[360px] lg:w-[450px]"
+              className="relative space-y-4 w-72 md:w-[360px] lg:w-[450px] 2xl:w-[600px]"
             >
-              <h2 className="text-2xl md:text-3xl font-semibold text-white animate-bounce">
+              <h2 className="text-2xl md:text-3xl 2xl:text-5xl font-semibold text-white animate-bounce">
                 Hi there!
               </h2>
-              <h1 className="text-4xl lg:text-5xl font-bold text-white">
+              <h1 className="text-4xl lg:text-5xl 2xl:text-7xl font-bold text-white">
                 I'm{" "}
                 <span
                   className="bg-clip-text text-transparent bg-gradient-to-r from-[#617bce] to-[#43aeba]
@@ -134,7 +134,7 @@ const Banner = () => {
             <div
               data-aos="fade-down"
               data-aos-duration="3000"
-              className="hidden md:block md:w-[350px] lg:w-[480px] xl:w-[500px]"
+              className="hidden md:block md:w-[350px] lg:w-[480px] xl:w-[500px] 2xl:w-[600px] mb-32"
             >
               <Lottie animationData={bannerAnime2} loop={true} />
             </div>
